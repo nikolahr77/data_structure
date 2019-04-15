@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -33,12 +32,4 @@ func StringSum(a, b string) int64 {
 	i, _ := strconv.ParseInt(a, 10, 64)
 	v, _ := strconv.ParseInt(b, 10, 64)
 	return i + v
-}
-
-func main() {
-	v := Sumator{3, -9}
-	fmt.Println(v.IntSum())
-	fmt.Println(v.FloatSum())
-	fmt.Println(v.StringSum())
-	fmt.Println(StringSum("5", "6"))
 }
